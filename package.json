@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "global": "^4.4.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.1.6",
+    "vue": "^3.2.36",
+    "vue-awesome-swiper": "^5.0.1",
+    "yarn": "^1.22.18"
+  }
+}

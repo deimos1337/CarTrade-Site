@@ -1,0 +1,30 @@
+.mane{
+	max-width: 100%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+	height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+	
+}
+.slider_background{
+    width: 50%;
+    margin: auto;
+    box-shadow: var(--box-shadow);
+    background-image: var(--linear-gradient);
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+.sl__slide{
+    position: relative;
+}
+.sl__text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    
+}

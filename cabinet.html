@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CarTrade</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.global.min.js"></script>	
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header"></div>
+        <div id="shopping"></div>
+        <div class="middle">
+        <div id="admin"></div>
+        </div>
+        <div id="footer">
+			<footer-container></footer-container>
+		</div>
+    </div>
+
+
+    <script src="script/ajax.js"></script>
+
+    
+	<script src="constants/root.js"></script>
+    
+	<script src="utils/localStorageUtil.js"></script>
+    <script src="utils/localStorageUtilCatalog.js"></script>
+
+	<script src="components/Header/Header.js"></script>
+	<link rel="stylesheet" href="components/Header/Header.css">
+
+    <script src="components/Admin/Admin.js"></script>
+	<link rel="stylesheet" href="components/Admin/Admin.css">    
+
+	<link rel="stylesheet" href="components/Products/Products.css">
+
+	<script src="components/Shopping/Shopping.js"></script>
+	<link rel="stylesheet" href="components/Shopping/Shopping.css">
+    
+    <script src="components/Footer/Footer.js"></script>
+	<link rel="stylesheet" href="components/Footer/Footer.css">
+
+    <script src="script/get_user_data.js"></script>
+	<script src="script/redirect.js"></script>
+    <script src="script/logout.js"></script>
+    <script src="script/add.js"></script>
+    <script src="script/delete.js"></script>
+    
+    
+
+</body>
+
+</html>

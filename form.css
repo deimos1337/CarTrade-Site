@@ -1,0 +1,101 @@
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 20%;
+    max-width: 400px;
+    margin: auto;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+}
+.form-container__change{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 30%;
+    max-width: 338px;
+    margin: auto;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+}
+.form-container__signup{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 20%;
+    max-width: 400px;
+    margin: auto;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+    font-size: 25px;
+}
+.form-element{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-element__input{
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    
+}
+.form-element__btn{
+    margin-left: 50%;
+    width: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 10px;
+    padding: 7px 10px;
+    border: 1px solid var(--color-unaccent);
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+.form-top{
+    text-align: center;
+}
+.form-top__container{
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.form-top__icon{
+    width: 25%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.form-link{
+    
+    font-size: 15px;
+    color: black;
+}
+.form-element__sex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.form-element__sex_block{
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.sex{
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}

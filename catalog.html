@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CarTrade</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.global.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="header"></div>
+			<div id="shopping"></div>
+			<div id="teleport" style="position: relative;">
+				<div class="teleport-bg">
+					<h3 class="teleport-title">Понравился автомобиль? Свяжитесь с нами!</h3>
+					<div>
+					<modal-button></modal-button>
+					</div>
+				</div>
+			</div>
+			<div id="products"></div>
+			<div id="teleport" style="position: relative;">
+				<div class="teleport-bg">
+					<h3 class="teleport-title">Добавили что-то в избранное?</h3>
+					<div>
+						<a href="favorite.html"><button class="favorite-element__btn">Избранное</button></a>  
+					</div>
+				</div>
+			</div>
+			<div class="middle"></div>
+			<div id="footer">
+				<footer-container></footer-container>
+			</div>
+		</div>
+
+		<script src="script/ajax.js"></script>
+		<script src="constants/catalog.js"></script>
+		<script src="constants/root.js"></script>
+		<script src="utils/localStorageUtil.js"></script>
+		<script src="utils/localStorageUtilCatalog.js"></script>
+		<script src="script/catalog_update.js"></script>
+
+		<script src="components/Header/Header.js"></script>
+		<link rel="stylesheet" href="components/Header/Header.css">
+
+		<script src="components/Products/Products.js"></script>
+		<link rel="stylesheet" href="components/Products/Products.css">
+
+		<script src="components/Shopping/Shopping.js"></script>
+		<link rel="stylesheet" href="components/Shopping/Shopping.css">
+
+		<script src="components/Footer/Footer.js"></script>
+		<link rel="stylesheet" href="components/Footer/Footer.css">
+
+		<link rel="stylesheet" href="components/Favorite/Favorite.css">
+
+		<script src="components/Teleport/Teleport.js"></script>
+		<link rel="stylesheet" href="components/Teleport/Teleport.css">
+		
+		<script src="script/logout.js"></script>
+		
+		
+
+
+		
+	</body>
+</html>

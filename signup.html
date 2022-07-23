@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarTrade</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="form.css">  
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.global.min.js"></script>	
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <div id="header"></div>
+        <div id="shopping"></div>
+
+        <div class="form-container">
+            <div class="form-top">
+                <div class="form-top__container">
+                    <span>Добро пожаловать</span>
+                </div>
+                <div class="form-top__container">
+                    <img class="form-top__icon" src="images/signup.png" alt="">
+                </div>
+            </div>
+            <form method="POST">
+                <div class="form-element">
+                    <div>Имя</div><input class="form-element__input" type="text" name="name" id="signup-name" placeholder="Введите имя">
+                </div>
+                <div class="form-element">
+                    <div>Пароль</div> <input class="form-element__input" type="password" name="pass" id="signup-pass" placeholder="Введите пароль">
+                </div>
+                <div class="form-element">
+                    <div>Почта</div> <input class="form-element__input" type="email" name="email" id="signup-email" placeholder="Введите почту">
+                </div>
+                <div class="form-element">
+                    <div>Дата рождения</div> <input class="form-element__input" type="date" name="birthday" id="signup-birthday"  placeholder="Введите дату рождения">
+                </div>
+                <div class="form-element">Пол
+                    <div class="form-element__sex">
+                        <div class="form-element__sex_block"><input type="radio" value="male" name="sex" checked class="sex">Мужчина</div>
+                        <div class="form-element__sex_block"><input type="radio" value="female" name="sex" class="sex">Женщина</div>
+                        <div class="form-element__sex_block"><input type="radio" value="other" name="sex" class="sex">Другое</div>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <input class="form-element__btn" type="submit" value="Зарегестрироваться" id="signup-submit">
+                </div>
+            </form>
+        </div>
+
+        <div class="middle"></div>
+        <div id="footer">
+            <footer-container></footer-container>
+        </div>
+    </div>
+
+
+    <script src="script/ajax.js"></script>
+    <script src="script/script.js"></script>
+
+    <script src="constants/catalog.js"></script>
+    <script src="constants/root.js"></script>
+    <script src="utils/localStorageUtil.js"></script>
+
+    <script src="components/Header/Header.js"></script>
+    <link rel="stylesheet" href="components/Header/Header.css">
+
+    <script src="components/Shopping/Shopping.js"></script>
+    <link rel="stylesheet" href="components/Shopping/Shopping.css">
+
+    <script src="components/Footer/Footer.js"></script>
+	<link rel="stylesheet" href="components/Footer/Footer.css">
+
+
+    <script src="script/ajax.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/logout.js"></script>
+</body>
+
+</html>

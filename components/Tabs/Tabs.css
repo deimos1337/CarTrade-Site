@@ -1,0 +1,110 @@
+.block_tabs{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	box-shadow: var(--box-shadow);
+    background-color: white;
+    border-radius: 10px;
+
+}
+.tabs_container{
+    width: 40%;
+    margin: auto;
+    background-image: var(--linear-gradient);
+    box-shadow: var(--box-shadow);  
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.tabs_header{
+    font-size: 35px;
+    font-weight: bold;
+}
+.tab-holder{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+}
+.tab-container{
+    width: 50%;
+    display: flex;
+}
+.tab-container__column_left{
+    width: 65%;  
+    margin-left: auto;
+    border-right: 1px solid black;
+    text-align: left;
+}
+.tab-container__column_right{
+    width: 100%;
+    margin-right: auto;
+    text-align: left;
+    padding-left: 20px;
+    border-left: 1px solid black; 
+}
+.tab-container__column{  
+    margin-top: 20px; 
+    display: flex;
+}
+.tab-holder__emoji{
+    margin-left: 50%;
+}
+.tab-holder__column{
+    margin-top: 5px; 
+}
+.tab-holder__image{
+    width: 34px;
+    height: 34px;
+    margin-right: 20px;  
+}
+.tabs {
+    font-size: 0;
+  }
+
+  .tabs>input[type="radio"] {
+    display: none;
+  }
+
+  .tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    border: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+  #tab-btn-1:checked~#content-1,
+  #tab-btn-2:checked~#content-2,
+  #tab-btn-3:checked~#content-3 {
+    display: block;
+  }
+
+  .tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    transition: 0.5s;
+  }
+
+  .tabs>label:not(:first-of-type) {
+    border-left: none;
+  }
+
+  .tabs>input[type="radio"]:checked+label {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+  }

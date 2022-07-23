@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CarTrade</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.global.min.js"></script>
+		
+    	<script src="js/mapbasics.js" type="text/javascript"></script>		
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="header"></div>
+			<div id="shopping"></div>
+			<div id="tabs">
+				<tabs-container></tabs-container>
+			</div>
+			<div class="map_background">
+				<div class="map_container">
+					<p class="map_header">Где нас искать?</p>
+					<div class="map_holder">
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<footer-container></footer-container>
+			</div>
+		</div>
+
+		<script src="utils/localStorageUtilCatalog.js"></script>
+		<script src="constants/catalog.js"></script>
+		<script src="constants/root.js"></script>
+		<script src="utils/localStorageUtil.js"></script>
+
+		<script src="components/Header/Header.js"></script>
+		<link rel="stylesheet" href="components/Header/Header.css">
+
+		<link rel="stylesheet" href="components/Products/Products.css">
+
+		<script src="components/Shopping/Shopping.js"></script>
+		<link rel="stylesheet" href="components/Shopping/Shopping.css">
+
+		<script src="components/Footer/Footer.js"></script>
+		<link rel="stylesheet" href="components/Footer/Footer.css">
+
+		<script src="components/Tabs/Tabs.js"></script>
+		<link rel="stylesheet" href="components/Tabs/Tabs.css">
+
+		
+		<script src="script/logout.js"></script>
+	</body>
+</html>
